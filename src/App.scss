@@ -4,52 +4,35 @@
     box-sizing: border-box;
 }
 
-.common {
-    height: 100vh;
-    scroll-snap-align: start;
-    overflow: auto;
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #446b7249;
 }
-
-.mainContainer {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-    scroll-behavior: smooth;
+::-webkit-scrollbar-track {
+    border-radius: 10px;
 }
-
-.one {
-    background: aquamarine;
-    h1 {
-        font-size: 75px;
+::-webkit-scrollbar-thumb {
+    background: #3f4142;
+    border-radius: 10px;
+    transition: all 0.3s;
+    &:hover{
+        background: #5f6466;
     }
 }
-.tow {
+
+// just for identify
+#one {
+    background: aquamarine;
+}
+#tow {
     background: wheat;
 }
-.three {
+#three {
     background: yellowgreen;
 }
-.four {
+#four {
     background: darkcyan;
 }
-
-.scroll-btn {
-    position: absolute;
-    left: auto;
-    right: 50px;
-    top: auto;
-    bottom: 50px;
-    display: flex;
-    flex-direction: column;
-
-    .scrollBtn-Common {
-        border: none;
-        padding: 10px;
-        margin: 10px 0;
-        background: fuchsia;
-        color: #fff;
-        text-decoration: none;
-        text-shadow: 0 0 5px #000;
-        border-radius: 5px;
-    }
+h1 {
+    font-size: 50px;
 }

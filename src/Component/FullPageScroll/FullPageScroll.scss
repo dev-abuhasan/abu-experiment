@@ -1,0 +1,29 @@
+#ScrollContainer {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+
+    .scroll_common_section {
+        height: 100vh;
+        scroll-snap-align: start;
+        overflow: auto;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        background: #272726;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #a16df5ec;
+        border-radius: 10px;
+        transition: all 0.3s;
+
+        &:hover {
+            background: #cc92fcf6;
+        }
+    }
+}
